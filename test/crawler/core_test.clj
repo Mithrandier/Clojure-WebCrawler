@@ -2,5 +2,7 @@
   (:require [clojure.test :refer :all]
             [crawler.core :refer :all]))
 
-(deftest a []
-  ())
+(def root-url "https://www.google.com/")
+
+(deftest main-test
+  (-main root-url 2))

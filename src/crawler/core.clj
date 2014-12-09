@@ -1,13 +1,9 @@
 (ns crawler.core
   (:gen-class)
-  (:use crawler.logger crawler.crawler)
-  )
-
-(def root-url "https://www.google.com/")
+  (:use crawler.logger crawler.crawler))
 
 (defn -main
-  "Crawl specified url for others urls. And again.. and again.."
-  [log-filename max-depth & args]
+  [log-filename max-depth]
     (clear-log)
-    (crawl root-url max-depth true)
+    (crawl root-url max-depth)
     (save-log "output.txt"))

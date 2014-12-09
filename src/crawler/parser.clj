@@ -15,7 +15,12 @@
 
 (defn get-hrefs [url]
   "Extract from url"
-  (let [http-resp (client/get url)]
-    (if (= (:status http-resp) 200)
-      (extract-hrefs (:body http-resp))
-      (:status http-resp))))
+  (try
+    (let [http-resp (client/get url)]
+      (if (= (:status http-resp) 200)
+        (let [hrefs (extract-hrefs (:body http-resp))]
+          (println 13123)
+          ({:success true :hrefs hrefs}))
+        ({:content http-resp})))
+    (catch clojure.lang.ExceptionInfo e
+      {:message "bad"})))
