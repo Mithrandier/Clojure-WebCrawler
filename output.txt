@@ -1,0 +1,9 @@
+
+https://www.google.com/ 11 links
+   https://www.google.by/imghp?hl=be&tab=wi 8 links
+   https://translate.google.by/?hl=be&tab=wT 20 links
+   https://www.google.by/setprefdomain?prefdom=US&sig=0__QdZCTdBE1ylQcWb_H2tIjrhJEg%3D 11 links
+   http://www.google.by/history/optout?hl=be 11 links
+   https://www.google.by/setprefs?sig=0_Sxv6VQEqidCCMb5DWL6NXNId43E%3D&hl=ru&source=homepage 22 links
+   https://accounts.google.com/ServiceLogin?hl=be&continue=https://www.google.by/%3Fgws_rd%3Dcr%26ei%3DQTyHVNjdA4vkUrbfgtAK 7 links
+   https://www.blogger.com/?tab=wj 7 links
