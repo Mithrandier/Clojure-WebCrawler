@@ -7,11 +7,13 @@
   (while (not (every? #(future-done? %) futures)) ()))
 
 (defn async [action]
+  "Perform in different stream"
   (def futures 
       (conj futures 
         (future (action)))))
 
 (defn sync-wise [action]
+  "Prepare threads and wait till they're finished"
   (def futures [])
   (action)
   (wait-for-all-done))

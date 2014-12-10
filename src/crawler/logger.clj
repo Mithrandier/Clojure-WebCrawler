@@ -12,6 +12,12 @@
       (ref-set log 
         (into (deref log) line)))))
 
+(def prefix-pattern "   ")
+(defn write-log-prefixed [text depth]
+  (let [prefix (apply str (repeat depth prefix-pattern))]
+    (println prefix text)
+    (printlog prefix text)))
+
 (defn save-log [filename]
   (write-file filename (apply str (deref log))))
 
