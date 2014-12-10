@@ -1,32 +1,15 @@
 # crawler
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+Crawl web-pages for links. Use found links to crawl further.
 
 ## Usage
 
-FIXME: explanation
-
-    $ java -jar crawler-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
+	$ lein run [file-with-urls] [depth-of-crawling]
+    $ java -jar crawler-0.1.0-standalone.jar [file-with-urls] [depth-of-crawling]
 
 ## Examples
 
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+	$ lein run urls.txt 1
 
 ## License
 
